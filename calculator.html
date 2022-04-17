@@ -1,0 +1,37 @@
+<html>
+
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src="scripts/script.js" defer></script>
+    </head>
+
+    <body>
+
+        <form  class="calculator" name="calc">
+
+            <input type="text" class="value" name="screen" readonly/>
+            <span class="num clear" onclick="clearScreen()">c</span>
+
+            <span class="num" onclick="dataInputClicked('/')">/</span>
+            <span class="num" onclick="dataInputClicked('*')">*</span>
+            <span class="num" onclick="dataInputClicked('7')">7</span>
+            <span class="num" onclick="dataInputClicked('8')">8</span>
+            <span class="num" onclick="dataInputClicked('9')">9</span>
+            <span class="num" onclick="dataInputClicked('-')">-</span>
+            <span class="num" onclick="dataInputClicked('4')">4</span>
+            <span class="num" onclick="dataInputClicked('5')">5</span>
+            <span class="num" onclick="dataInputClicked('6')">6</span>
+            <span class="num add" onclick="dataInputClicked('+')">+</span>
+            <span class="num" onclick="dataInputClicked('1')">1</span>
+            <span class="num" onclick="dataInputClicked('2')">2</span>
+            <span class="num" onclick="dataInputClicked('3')">3</span>
+            <span class="num" onclick="dataInputClicked('0')">0</span>
+            <!-- <span class="num" onclick="dataInputClicked('00')">00</span> -->
+            <span class="num dot" onclick="dataInputClicked('.')">.</span>
+            <span class="num equal" onclick="equalsClicked()">=</span>
+        </form>
+
+    </body>
+</html>
